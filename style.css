@@ -4,36 +4,58 @@ html {
 
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 720px) {
   .parallax-1 {
-    width: 100%;
-  height: 100%;
-    background-attachment: scroll;
-    background-size: 100% 100%;
-    background-position: center;
-
+    background-attachment: scroll !important;
+    background-position: center center !important;
   }
 
-  div#header {
-    background-image: url(media-queries-phone.jpg);
-    height: 93px;
-    position: relative;
+  .topnav a {
+    padding: 12px 14px !important;
+    text-decoration: none;
+    font-size: 14px !important;
   }
 
-  div#header h1 {
-    font-size: 140%;
+  #moben {
+    padding: 0px 14px !important;
+    font-size: 14px !important;
   }
 
-  #content {
-    float: none;
-    width: 100%;
+  #header1 {
+    padding-top: 35px !important;
+    font-size: 35px !important;
   }
 
-  #navigation {
-    float: none;
-    width: auto;
+  #header2 {
+    font-size: 20px !important;
+    padding-bottom: 10px;
+  }
+
+  .button {
+    padding: 8px 16px !important;
+    font-size: 12px !important;
+  }
+
+  #header3 {
+    font-size: 30px !important;
+  }
+
+  #text {
+
+    width: 90% !important;
+  }
+
+  #back2 {
+    background-color: #79253d;
+    padding: px !important;
+  }
+
+  .img {
+    width: 90% !important;
+
   }
 }
+
 
 
 
