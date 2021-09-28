@@ -4,7 +4,7 @@ html {
 
 
 
-@media only screen and (max-device-width: 720px) {
+@media only screen and (max-device-width: 720px) and (orientation: portrait) {
   .parallax-1 {
     background-attachment: scroll !important;
     background-position: center center !important;
