@@ -1,8 +1,16 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-
+body {
+  margin: 0;
+  background-color: #f4f2ec;
+}
 
 @media only screen and (max-device-width: 720px) and (orientation: portrait) {
   .parallax-1 {
@@ -41,7 +49,6 @@ html {
   }
 
   #text {
-
     width: 90% !important;
   }
 
@@ -52,17 +59,7 @@ html {
 
   .img {
     width: 90% !important;
-
   }
-}
-
-
-
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f2ec;
 }
 
 .topnav {
@@ -129,12 +126,9 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
-
-
-
 
 .parallax-1 {
   width: 100%;
@@ -145,11 +139,10 @@ body {
   background-attachment: fixed;
   background-size: 100%;
   background-color: #f4f2ec;
-  ;
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   /* Green */
   border: none;
   color: rgb(255, 255, 255);
@@ -166,7 +159,7 @@ body {
 .button1 {
   background-color: rgb(53, 206, 61);
   color: rgb(255, 255, 255);
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
 }
 
 .button1:hover {
@@ -211,7 +204,6 @@ body {
 #foot {
   background-color: rgb(75, 75, 75);
   text-align: center;
-
 }
 
 #contact {
