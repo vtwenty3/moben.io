@@ -16,12 +16,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <div class="topnav">
-    <p id="moben">Мобен Мебел</p>
-    <a href="#contact">Контакти</a>        
-  </div>
-
+<body id="top">
+  <!-- Navigation -->
+  <header>
+    <div class="nav">
+      <a href="#top"><p id="moben">Мобен Мебел</p></a>
+      <a href="#contact">Контакти</a>        
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main>
+      
   <div class="parallax-1">
     <h1 id="header1"> Мебели по Поръчка </h1>
     <h2 id="header2"> Пълнота, Надеждност, Професионализъм </h2>
@@ -44,8 +49,7 @@
       прости до сложни проекти, които нашия екип изпълнява с удоволствие.</p>
   </div>
 
-  <h1 id=header4>Портфолио</h1>
-  <h2 id=header5> Разгледайте част от нашата работа</h2>
+  <h1 style="text-align: center; padding: 25px;">Портфолио</h1>
 
   <div class="row">
     <div class="column">
@@ -58,16 +62,23 @@
       <a href="#gallery"><img src="img/bed.jpg" alt="Mountains" style="width:100%"></a>
     </div>
   </div>
-  <p style="text-align: center; font-size: 30px;" id="gallery">Галерия</p>
+  <label for="Gallery" style="visibility: hidden;" id="gallery"></label>
+  <p style="text-align: center; font-size: 22px; margin-bottom: 0px;">Разгледайте част от нашата работа</p>
   <!-- Slider main container -->
   <div class="swiper gallery-mobile">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="img/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/2.jpg"></div>
       <div class="swiper-slide"><img src="img/3.jpg"></div>
-
+      <div class="swiper-slide"><img src="img/4.jpg"></div>
+      <div class="swiper-slide"><img src="img/5.jpg"></div>
+      <div class="swiper-slide"><img src="img/6.jpg"></div>
+      <div class="swiper-slide"><img src="img/7.jpg"></div>
+      <div class="swiper-slide"><img src="img/8.jpg"></div>
+      <div class="swiper-slide"><img src="img/9.jpg"></div>
+      <div class="swiper-slide"><img src="img/10.jpg"></div>
+      <div class="swiper-slide"><img src="img/11.jpg"></div>
+      <div class="swiper-slide"><img src="img/12.jpg"></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -76,8 +87,6 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
   
   <div class="row2 gallery-web">
@@ -108,18 +117,43 @@
   </div>
 
     <div id=contact>
-      <h1><b>Свържи се с нас</b></h1>
-      <h2>ul. "Maragidik" 2-14, 4000 Plovdiv</h2>
-      <h2>Кирил Шумилов: +359898321439</h2>
-      <h2>Марио Христев: 0897463385</h2>
+      <h1><b>Връзка с Нас</b></h1>
+      
+      <div class="contact-people">
+        <div class="contact-person">          
+          <div class="contact-person-img">
+            <img src="./img/kiril.png" alt="Kiril Shumilov">
+          </div>          
+          <div class="contact-person-content">
+            <h2 class="contact-person-name">Кирил Шумилов</h2>
+            <p>ul. "Maragidik" 2-14, 4000 Plovdiv</p>
+            <a href="tel:+359898321439" style="color: white;"><p class="contact-person-phone">+359898321439</p></a>
+          </div>
+        </div>
+        <div class="contact-person">
+          <div class="contact-person-img">
+            <img src="./img/mario.png" alt="Mario Hristev">
+          </div>
+          <div class="contact-person-content">
+            <h2 class="contact-person-name">Марио Христев</h2>
+            <p>ul. "Maragidik" 2-14, 4000 Plovdiv</p>
+            <a href="tel:+359897463385" style="color: white;"><p class="contact-person-phone">+359897463385</p></a>         
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
 
     <iframe
+      id="map"
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11832.154318449957!2d24.755115293640138!3d42.14946123890676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1a1fb44e2dd%3A0xa5ed280a61c7b656!2sul.%20%22Maragidik%22%202%2C%204000%20Tsentar%2C%20Plovdiv%2C%20Bulgaria!5e0!3m2!1sen!2suk!4v1632852499030!5m2!1sen!2suk"
       width="100%" height="600" style="border:0; filter: invert(100%)" allowfullscreen="" loading="lazy">
     </iframe>
     
-</body>
+  </main>
+
+
 
 <footer>
   
@@ -128,4 +162,5 @@
 </footer>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="./index.js"></script>
+</body>
 </html>

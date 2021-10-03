@@ -22,7 +22,7 @@ body {
     border-bottom: 20px;
   }
 
-  .topnav a{
+  .nav a{
     padding: 12px 14px !important;
     text-decoration: none;
   }
@@ -65,23 +65,43 @@ body {
   }
 } */
 
-.topnav {
+.nav {
   background-color: #f4f2ec;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  height: 9vh;
-  margin: 0 16px;
   font-weight: 400;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.nav p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.nav a {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #moben {
   float: left;
   text-align: center;
-  padding: 0px 30px;
   cursor: pointer;
   text-decoration: none;
+  color: #79253d;
+  border: 1px solid #79253d;
+  font-weight: 800;
+  padding: 10px !important;
 }
 
 #header1 {
@@ -120,7 +140,7 @@ body {
   text-align: center;
 }
 
-.topnav a {
+.nav a {
   float: right;
   color: #79253d;
   text-align: center;
@@ -128,12 +148,12 @@ body {
   text-decoration: none;
 }
 
-.topnav a:hover {
+.nav a:hover {
   color: black;
   transition: 0.3s;
 }
 
-.topnav a.active {
+.nav a.active {
   background-color: #04aa6d;
   color: white;
 }
@@ -239,6 +259,36 @@ footer {
   width: 400px !important;
   object-fit: contain;
 }
+
+.contact-people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-person img {
+  border: 2px solid white;
+  border-radius: 500px;
+  -webkit-box-shadow: 2px 0px 18px -2px #eee;
+  box-shadow: 2px 0px 18px -2px #eee;
+  width: 200px;
+  height: 200px;
+}
+
+.contact-person {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  width: 30vw;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contact-person-name {
+  font-size: 32px;
+  font-weight: 600;
+}
 #contact {
   display: block;
   width: 100%;
@@ -270,7 +320,8 @@ footer {
   clear: both;
   display: table;
 }
-.row2 {
+
+.gallery-web {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -315,7 +366,32 @@ footer {
   }
 }
 
+.contact-person-content p {
+  font-size: 20px;
+}
+
 @media only screen and (max-device-width: 720px) and (orientation: portrait) {
+  .contact-person-content p {
+    font-size: 12px !important;
+  }
+
+  .contact-person-content h2 {
+    font-size: 18px !important;
+  }
+
+  .contact-person-img {
+    margin-right: 20px;
+  }
+
+  .contact-person-content {
+    margin-left: 20px;
+  }
+
+  .contact-person-img img {
+    height: 130px !important;
+    width: 130px !important;
+  }
+
   .parallax-1 {
     /* background-attachment: scroll !important; */
     /* background-position: center center !important; */
@@ -323,7 +399,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: top;
-    padding-top: 20%;
+    margin-top: 20%;
+
     align-items: center;
     /* border-top: 20px;
     border-bottom: 20px; */
